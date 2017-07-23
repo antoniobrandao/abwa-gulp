@@ -328,6 +328,8 @@ gulp.task('js_watch_auth', ['environmentCheck'], function()
     debug:      global.ENV === 'development'
   });
 
+  browserify_instance.transform('jadeify');
+
   var bundler = watchify(browserify_instance);
   bundler.on('update', bundle); // on any dep update, runs the bundler
 
@@ -349,6 +351,8 @@ gulp.task('js_build_auth', ['environmentCheck'], function() {
     entries:    [ABWA.config.authJSPath],
     debug:      global.ENV === 'development'
   });
+
+  browserify_instance.transform('jadeify');
 
   var bundle = function() 
   {
@@ -427,6 +431,8 @@ gulp.task('js_watch_client', ['environmentCheck'], function()
     debug:      global.ENV === 'development'
   });
 
+  browserify_instance.transform('jadeify');
+
   var bundler = watchify(browserify_instance);
   bundler.on('update', bundle); // on any dep update, runs the bundler
 
@@ -448,6 +454,8 @@ gulp.task('js_build_client', ['environmentCheck'], function() {
     entries:    [ABWA.config.clientJSPath],
     debug:      global.ENV === 'development'
   });
+
+  browserify_instance.transform('jadeify');
 
   var bundle = function() 
   {
