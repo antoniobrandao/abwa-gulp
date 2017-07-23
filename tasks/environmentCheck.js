@@ -12,8 +12,15 @@ gulp.task('environmentCheck', function()
 	}
 
 	if (!global.currentVersion) {
+		
 		var pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8')); // get data from package.json
 	  	global.currentVersion = pkg.version; // determine current version
+	  	
+	  	console.log('global.currentVersion: ' + global.currentVersion);
+	  	console.log('global.currentVersion: ' + global.currentVersion);
+	  	console.log('global.currentVersion: ' + global.currentVersion);
+	  	console.log('global.currentVersion: ' + global.currentVersion);
+	  	console.log('global.currentVersion: ' + global.currentVersion);
 	}
 
   	return;
