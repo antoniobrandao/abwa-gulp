@@ -1,6 +1,6 @@
 {
   "name": "abwa-gulp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "gulp task runner for abwa",
   "main": "index.js",
   "keywords": [
