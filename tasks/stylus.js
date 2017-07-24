@@ -9,11 +9,16 @@ var print           = require('gulp-print');
 var rename      	= require('gulp-rename');
 
 var stylus		 	= require("gulp-stylus");
-var autoprefixer 	= require("autoprefixer-stylus");
-var jeet		 	= require("jeet");
-var rupture	 	 	= require("rupture");
-var axis	 		= require("axis-css");
-var typographic	 	= require("typographic");
+
+var jeet          = require("jeet");
+var typographic   = require("typographic");
+var rupture       = require("rupture");
+
+var lost          = require("lost");
+var axis          = require("axis");
+var postcss       = require('gulp-postcss');
+var autoprefixer  = require("autoprefixer");
+
 
 gulp.task('stylus_core', ['environmentCheck'], function () 
 {  
@@ -22,8 +27,12 @@ gulp.task('stylus_core', ['environmentCheck'], function ()
 	.pipe(stylus({ 
 		compress: global.ENV === 'production',
 		use:[	
+				poststylus([
+					'autoprefixer',
+					'lost'
+				]),
 				jeet(),
-				rupture(), 
+				rupture(),
 				// typographic(), 
 				// axis(), 
 				// autoprefixer({ browsers: ['ie 7', 'ie 8'] })
@@ -62,8 +71,12 @@ gulp.task('stylus_frontend', ['environmentCheck'], function ()
 	.pipe(stylus({ 
 		compress: global.ENV === 'production',
 		use:[	
+				poststylus([
+					'autoprefixer',
+					'lost'
+				]),
 				jeet(),
-				rupture(), 
+				rupture(),
 				typographic(), 
 				axis(), 
 				// autoprefixer({ browsers: ['ie 7', 'ie 8'] })
@@ -82,8 +95,12 @@ gulp.task('stylus_client', ['environmentCheck'], function ()
 	.pipe(stylus({ 
 		compress: global.ENV === 'production',
 		use:[	
+				poststylus([
+					'autoprefixer',
+					'lost'
+				]),
 				jeet(),
-				rupture(), 
+				rupture(),
 				// typographic(), 
 				// axis(), 
 				// autoprefixer({ browsers: ['ie 7', 'ie 8'] })

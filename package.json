@@ -33,8 +33,8 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "autoprefixer-stylus": "^0.5.0",
-    "axis-css": "^0.1.8",
+    "autoprefixer": "^7.1.2",
+    "axis": "^1.0.0",
     "browser-sync": "^2.8.2",
     "browserify": "~8.1.3",
     "chalk": "^0.5.1",
@@ -58,6 +58,7 @@
     "gulp-nodemon": "^1.0.5",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^0.6.6",
+    "gulp-postcss": "^7.0.0",
     "gulp-print": "^1.1.0",
     "gulp-prompt": "^0.1.2",
     "gulp-rename": "^1.2.2",
@@ -72,6 +73,7 @@
     "jade": "^1.9.1",
     "jadeify": "^4.0.0",
     "jeet": "^6.1.2",
+    "lost": "^8.2.0",
     "mime": "^1.2.11",
     "mongoose": "^4.9.7",
     "morgan": "^1.5.1",
@@ -102,5 +104,5 @@
     "type": "git",
     "url": "https://github.com/github.com/antoniobrandao/abwa-gulp"
   },
-  "version": "0.0.5"
+  "version": "0.0.6"
 }

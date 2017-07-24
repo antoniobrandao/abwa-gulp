@@ -12,14 +12,7 @@ var bundleLogger  = require('../util/bundleLogger');
 var handleErrors  = require('../util/handleErrors');
 var strip         = require('gulp-strip-debug');
 var print         = require("gulp-print");
-
-var autoprefixer  = require("autoprefixer-stylus");
-var jeet          = require("jeet");
-var rupture       = require("rupture");
-var axis          = require("axis-css");
-var typographic   = require("typographic");
-var stylify       = require("stylify");
-var showProgress  = require('show-stream-progress')
+var showProgress  = require('show-stream-progress');
 
 
 
@@ -66,21 +59,21 @@ gulp.task('js_watch', ['environmentCheck'], function()
     debug:      global.ENV === 'development'
   });
 
-  browserify_instance.transform('stylify', {
-    use :[ 
-      jeet(),
-      rupture(), 
-      typographic(), 
-      axis(), 
-      autoprefixer({ browsers: ['ie 7', 'ie 8'] })
-    ],
-    set: {
-      sourcemap: { inline: true },
-      compress: global.ENV === 'production'
-    },
-    // sourcemap: { inline: global.ENV === 'development' },
-    // compress: global.ENV === 'production',
-  });
+  // browserify_instance.transform('stylify', {
+  //   use :[ 
+  //     jeet(),
+  //     rupture(), 
+  //     typographic(), 
+  //     axis(), 
+  //     autoprefixer({ browsers: ['ie 7', 'ie 8'] })
+  //   ],
+  //   set: {
+  //     sourcemap: { inline: true },
+  //     compress: global.ENV === 'production'
+  //   },
+  //   // sourcemap: { inline: global.ENV === 'development' },
+  //   // compress: global.ENV === 'production',
+  // });
 
   browserify_instance.transform('jadeify');
 
@@ -106,17 +99,17 @@ gulp.task('js_build', ['environmentCheck'], function() {
     debug:      global.ENV === 'development'
   });
 
-  browserify_instance.transform('stylify', {
-    use :[ 
-      jeet(),
-      rupture(), 
-      typographic(), 
-      axis(), 
-      autoprefixer({ browsers: ['ie 7', 'ie 8'] })
-    ],
-    sourcemap: { inline: global.ENV === 'development' },
-    compress: global.ENV === 'production',
-  });
+  // browserify_instance.transform('stylify', {
+  //   use :[ 
+  //     jeet(),
+  //     rupture(), 
+  //     typographic(), 
+  //     axis(), 
+  //     autoprefixer({ browsers: ['ie 7', 'ie 8'] })
+  //   ],
+  //   sourcemap: { inline: global.ENV === 'development' },
+  //   compress: global.ENV === 'production',
+  // });
 
   browserify_instance.transform('jadeify');
 
@@ -200,17 +193,17 @@ gulp.task('js_watch_frontend', ['environmentCheck'], function()
     debug:      global.ENV === 'development'
   });
 
-  browserify_instance.transform('stylify', {
-    use :[ 
-      jeet(),
-      rupture(), 
-      typographic(), 
-      axis(), 
-      autoprefixer({ browsers: ['ie 7', 'ie 8'] })
-    ],
-    set: {
-      sourcemap: { inline: true },
-      compress: global.ENV === 'production'
+  // browserify_instance.transform('stylify', {
+  //   use :[ 
+  //     jeet(),
+  //     rupture(), 
+  //     typographic(), 
+  //     axis(), 
+  //     autoprefixer({ browsers: ['ie 7', 'ie 8'] })
+  //   ],
+  //   set: {
+  //     sourcemap: { inline: true },
+  //     compress: global.ENV === 'production'
     },
     // sourcemap: { inline: global.ENV === 'development' },
     // compress: global.ENV === 'production',
@@ -240,17 +233,17 @@ gulp.task('js_build_frontend', ['environmentCheck'], function() {
     debug:      global.ENV === 'development'
   });
 
-  browserify_instance.transform('stylify', {
-    use :[ 
-      jeet(),
-      rupture(), 
-      typographic(), 
-      axis(), 
-      autoprefixer({ browsers: ['ie 7', 'ie 8'] })
-    ],
-    sourcemap: { inline: global.ENV === 'development' },
-    compress: global.ENV === 'production',
-  });
+  // browserify_instance.transform('stylify', {
+  //   use :[ 
+  //     jeet(),
+  //     rupture(), 
+  //     typographic(), 
+  //     axis(), 
+  //     autoprefixer({ browsers: ['ie 7', 'ie 8'] })
+  //   ],
+  //   sourcemap: { inline: global.ENV === 'development' },
+  //   compress: global.ENV === 'production',
+  // });
 
   browserify_instance.transform('jadeify');
 
