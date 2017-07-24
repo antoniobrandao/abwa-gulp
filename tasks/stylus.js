@@ -18,6 +18,7 @@ var lost          = require("lost");
 var axis          = require("axis");
 var postcss       = require('gulp-postcss');
 var autoprefixer  = require("autoprefixer");
+var poststylus    = require('poststylus');
 
 
 gulp.task('stylus_core', ['environmentCheck'], function () 
