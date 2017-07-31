@@ -1,8 +1,8 @@
 {
   "_from": "abwa-gulp@latest",
-  "_id": "abwa-gulp@0.0.3",
+  "_id": "abwa-gulp@0.0.7",
   "_inBundle": false,
-  "_integrity": "sha512-RC5lvI0LFfgOhq0XxgwMXY0XL392kL0D5Kwx9X/8NjGk2e4j7feZ1lc2n915XWzXfPAS+Hbn2SmHlh+3cfR3LQ==",
+  "_integrity": "sha512-zajHMKUwEKFn/X6mQVumgsj2pPEXFKMWSpTG3PrqPg0oAaIRBTsJyqH964VaKga1QegF6c8L2lxAVGRjRFC3WQ==",
   "_location": "/abwa-gulp",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
     "#DEV:/",
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/abwa-gulp/-/abwa-gulp-0.0.3.tgz",
-  "_shasum": "5325edf60ffd94d64bef6d714bc44bdc1a406f5d",
+  "_resolved": "https://registry.npmjs.org/abwa-gulp/-/abwa-gulp-0.0.7.tgz",
+  "_shasum": "e34a7ef0c6617c2714902035a9c6cd04bb55611b",
   "_spec": "abwa-gulp@latest",
-  "_where": "/Users/antoniobrandao/WEBROOT/ABWA",
+  "_where": "/Users/antoniobrandao/WEBROOT/visit/VISIT",
   "author": {
     "name": "Antonio Brandao",
     "email": "antoniobrandaodesign@gmail.com",
@@ -105,5 +105,5 @@
     "type": "git",
     "url": "https://github.com/github.com/antoniobrandao/abwa-gulp"
   },
-  "version": "0.0.7"
+  "version": "0.0.8"
 }

@@ -204,10 +204,10 @@ gulp.task('js_watch_frontend', ['environmentCheck'], function()
   //   set: {
   //     sourcemap: { inline: true },
   //     compress: global.ENV === 'production'
-    },
+    // },
     // sourcemap: { inline: global.ENV === 'development' },
     // compress: global.ENV === 'production',
-  });
+  // });
 
   browserify_instance.transform('jadeify');
 
