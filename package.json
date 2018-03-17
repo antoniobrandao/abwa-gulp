@@ -1,28 +1,15 @@
 {
-  "_from": "abwa-gulp@latest",
-  "_id": "abwa-gulp@0.0.7",
-  "_inBundle": false,
-  "_integrity": "sha512-zajHMKUwEKFn/X6mQVumgsj2pPEXFKMWSpTG3PrqPg0oAaIRBTsJyqH964VaKga1QegF6c8L2lxAVGRjRFC3WQ==",
-  "_location": "/abwa-gulp",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "abwa-gulp@latest",
-    "name": "abwa-gulp",
-    "escapedName": "abwa-gulp",
-    "rawSpec": "latest",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+  "version": "0.0.9",
+  "deprecated": false,
+  "description": "gulp task runner for abwa",
+  "homepage": "https://github.com/github.com/antoniobrandao/abwa-gulp",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "abwa-gulp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/github.com/antoniobrandao/abwa-gulp"
   },
-  "_requiredBy": [
-    "#DEV:/",
-    "#USER"
-  ],
-  "_resolved": "https://registry.npmjs.org/abwa-gulp/-/abwa-gulp-0.0.7.tgz",
-  "_shasum": "e34a7ef0c6617c2714902035a9c6cd04bb55611b",
-  "_spec": "abwa-gulp@latest",
-  "_where": "/Users/antoniobrandao/WEBROOT/visit/VISIT",
   "author": {
     "name": "Antonio Brandao",
     "email": "antoniobrandaodesign@gmail.com",
@@ -39,8 +26,6 @@
     "browserify": "~8.1.3",
     "chalk": "^0.5.1",
     "del": "^2.2.0",
-    "express": "^4.11.2",
-    "express-subdomain": "^1.0.3",
     "flatdoc": "^0.9.0",
     "gulp": "^3.8.11",
     "gulp-cached": "^1.0.2",
@@ -69,17 +54,11 @@
     "gulp-stylus": "^2.0.5",
     "gulp-uglify": "^1.1.0",
     "gulp-util": "^3.0.3",
-    "imagemagick": "^0.1.3",
     "jade": "^1.9.1",
     "jadeify": "^4.0.0",
     "jeet": "^6.1.2",
     "lost": "^8.2.0",
     "mime": "^1.2.11",
-    "mongoose": "^4.9.7",
-    "morgan": "^1.5.1",
-    "nodemailer-smtp-transport": "^1.0.0",
-    "page": "^1.6.0",
-    "passport": "^0.2.1",
     "poststylus": "^0.2.3",
     "pretty-hrtime": "^1.0.0",
     "rimraf": "^2.2.8",
@@ -91,19 +70,5 @@
     "typographic": "^1.1.0",
     "vinyl-source-stream": "^1.0.0",
     "watchify": "^2.3.0"
-  },
-  "deprecated": false,
-  "description": "gulp task runner for abwa",
-  "homepage": "https://github.com/github.com/antoniobrandao/abwa-gulp",
-  "keywords": [
-    "abwa"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "name": "abwa-gulp",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/github.com/antoniobrandao/abwa-gulp"
-  },
-  "version": "0.0.8"
+  }
 }
